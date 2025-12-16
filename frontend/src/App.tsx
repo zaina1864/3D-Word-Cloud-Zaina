@@ -36,11 +36,16 @@ function App() {
 
       {loading && <p>Loading...</p>}
 
-      {result && (
-        <pre style={{ marginTop: 20 }}>
-          {JSON.stringify(result, null, 2)}
-        </pre>
+     {result && (
+        <ul style={{ marginTop: 20 }}>
+          {result.words.map((w: any, i: number) => (
+            <li key={i}>
+              {w.word} ({w.weight.toFixed(2)})
+            </li>
+          ))}
+        </ul>
       )}
+
     </div>
   )
 }
