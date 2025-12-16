@@ -1,4 +1,4 @@
-# 3D Word Cloud - Zee
+# 3D Word Cloud - Zaina
 
 This project visualizes topics from a news article as a **3D interactive word cloud**.
 
@@ -24,8 +24,21 @@ This project visualizes topics from a news article as a **3D interactive word cl
 
 ## Setup & Run
 
-1. Make sure you have Python, Node.js, and npm installed  
-2. Run the setup script:
+### Windows (PowerShell)
 
-```bash
-./setup.sh
+1. Open the project in **VS Code**  
+2. Run the `setup.ps1` script to start both backend and frontend  
+
+---
+
+### Linux / macOS (Bash)
+
+1. Open the project in VS Code or any terminal  
+2. Run the `setup.sh` script to start both backend and frontend  
+
+---
+
+### Access the Servers
+
+- **Backend:** [http://localhost:8000](http://localhost:8000)  
+- **Frontend:** [http://localhost:5173](http://localhost:5173)
