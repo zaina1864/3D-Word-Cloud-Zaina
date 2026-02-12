@@ -8,7 +8,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"], # Allows your Railway frontend to talk to this API
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
